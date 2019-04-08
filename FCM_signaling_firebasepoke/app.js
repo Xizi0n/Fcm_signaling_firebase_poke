@@ -59,6 +59,7 @@ app.post('/sendMessage/:target', (req, res) => {
     var targetToken = req.params.target;
     console.log('request body:');
     console.log(req.body);
+    console.log(typeof req.body);
     var fromToken = req.body.from;
     var message = req.body.message;
     var timeStamp = new Date();
