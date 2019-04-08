@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  fcm_signaling_firebase_poke:
+    build: ./FCM_signaling_firebasepoke
+    ports:
+      - 8888:8888
