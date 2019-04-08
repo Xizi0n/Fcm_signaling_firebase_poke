@@ -66,7 +66,7 @@ app.post('/sendMessage/:target', (req, res) => {
     var message = req.body.message;
     var timeStamp = new Date();
     // Debug
-    if (targetToken && fromtoken) {
+    if (targetToken && fromToken) {
         sendMessage(fromToken, targetToken, message);
         sendData(fromToken, targetToken, message);
         return res.status(200).json("Message sent successfully!");
